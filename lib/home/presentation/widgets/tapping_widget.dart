@@ -18,8 +18,8 @@ class _TappingWidgetState extends State<TappingWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTapDown: (_)=> notifier.value=true,
-      onTapUp: (_)=> notifier.value=false,
+      onTapDown: (_) => notifier.value = true,
+      onTapUp: (_) => notifier.value = false,
       onTap: () {
         // notifier.value=true;
         BlocProvider.of<HomeBloc>(context).add(TappingEvent());
@@ -32,12 +32,15 @@ class _TappingWidgetState extends State<TappingWidget> {
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
-                boxShadow:  [BoxShadow(blurRadius:value?0: 2, spreadRadius:value?0: 2, color: Colors.black12)]),
+                boxShadow: [BoxShadow(blurRadius: value ? 0 : 2, spreadRadius: value ? 0 : 2, color: Colors.black12)]),
             width: MediaQuery.of(context).size.width * .4,
             height: MediaQuery.of(context).size.width * .4,
             duration: const Duration(milliseconds: 150),
             child: const Center(
-              child: Text(Strings.tapHere,style: TextStyle(fontSize: 22),),
+              child: Text(
+                Strings.tapHere,
+                style: TextStyle(fontSize: 22),
+              ),
             ),
           );
         },

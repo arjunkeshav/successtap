@@ -15,12 +15,14 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white,
+    return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: const Text(Strings.appName),
         centerTitle: true,
       ),
-      body:  Column(
+      body: Column(
         // mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -32,10 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
               Expanded(child: RandomNumberWidget()),
             ],
           ),
-          SizedBox(height: MediaQuery.sizeOf(context).height*.2,)
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * .2,
+          )
         ],
       ),
-
     );
   }
 }

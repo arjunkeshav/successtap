@@ -17,5 +17,4 @@ class TapEventProvider {
     }
     return TapEventResponse(successCount: successCount, randomNum: randomNo, isSuccessMatch: randomNumMatch);
   }
-
 }
