@@ -1,16 +1,59 @@
-# successtap
+# Success Tap
+ 
+ Success Tap is a Flutter application that allows users to tap and achieve success based on random number matching.
+ The name is also emerged from this concept
 
-A new Flutter project.
+## Table of Contents
 
-## Getting Started
+- [Features](#features)
+- [Packages Used](#packages-used)
+- [Developer](#developer)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Tap to achieve success.
+- Display random numbers and success messages.
+- Celebrate success with animations.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Packages Used
+
+- **flutter_bloc**
+  - Description: State management library for Flutter applications using the BLoC (Business Logic Component) pattern.
+  - [Package Link](https://pub.dev/packages/flutter_bloc)
+  - Version: 8.1.3
+
+- **equatable**
+  - Description: Simplifies equality comparisons for Dart objects.
+  - [Package Link](https://pub.dev/packages/equatable)
+  - Version: 2.0.5
+
+- **bloc**
+  - Description: A predictable state management library that helps implement the BLoC pattern.
+  - [Package Link](https://pub.dev/packages/bloc)
+  - Version: 8.1.2
+
+- **shared_preferences**
+  - Description: Flutter plugin for reading and writing simple key-value pairs using shared preferences on both iOS and Android.
+  - [Package Link](https://pub.dev/packages/shared_preferences)
+  - Version: 2.2.2
+
+- **lottie**
+  - Description: Flutter plugin for rendering Lottie animations.
+  - [Package Link](https://pub.dev/packages/lottie)
+  - Version: 2.7.0
+ 
+
+## Developer
+
+- name : Arjun T K
+- Flutter Engineer with 5 year of experience in Mobile Development
+- Created an entire e-commerce application from scratch and now it has over 5 lakh downloads
+- contact no : +919496633406
+- contact mail : arjunkesavan07@gmail.com
+  
+ 
+   
+
+
+
