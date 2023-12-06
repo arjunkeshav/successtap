@@ -1,12 +1,21 @@
-import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:math';
 
-class TapEventProvider{
-  Future<int> getSuccessCount() async {
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:successtap/home/model/tapEventResponse.dart';
+
+class TapEventProvider {
+  Future<TapEventResponse> handleTapEvent() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    return prefs.getInt('successCount') ?? 0;
+    bool randomNumMatch = false;
+    int randomNo = Random().nextInt(60);
+    int currentSeconds = DateTime.now().second;
+    int successCount = prefs.getInt('successCount') ?? 0;
+    if (randomNo == currentSeconds) {
+      successCount++;
+      randomNumMatch = true;
+      await prefs.setInt('successCount', successCount);
+    }
+    return TapEventResponse(successCount: successCount, randomNum: randomNo, isSuccessMatch: randomNumMatch);
   }
-  Future<void> setSuccessCount(int successCount) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('successCount', successCount);
-  }
+
 }

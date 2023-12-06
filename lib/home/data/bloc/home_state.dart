@@ -9,17 +9,16 @@ class HomeInitialState extends HomeState {
   List<Object> get props => [];
 }
 
+class HomeLoadingState extends HomeState {
+  @override
+  List<Object> get props => [];
+}
+
 class HomeTapEventSuccessState extends HomeState {
-  final int randomNum;
-  const HomeTapEventSuccessState({required this.randomNum});
+  final TapEventResponse tapEventResponse;
+  const HomeTapEventSuccessState({required this.tapEventResponse});
 
   @override
-  List<Object> get props => [randomNum];
+  List<Object> get props => [tapEventResponse];
 }
 
-class HomeTapEventFailureState extends HomeState {
-  final int randomNum;
-  const HomeTapEventFailureState({required this.randomNum});
-  @override
-  List<Object> get props => [randomNum];
-}
